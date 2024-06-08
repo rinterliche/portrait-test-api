@@ -1,0 +1,48 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/stock_tickers/search/{ticker_name}/{multiplier}/{timespan}/{from}/{to}":
+    parameters:
+    - name: ticker_name
+      in: path
+      description: ticker_name
+      required: true
+      schema:
+        type: string
+    - name: multiplier
+      in: path
+      description: multiplier
+      required: true
+      schema:
+        type: string
+    - name: timespan
+      in: path
+      description: timespan
+      required: true
+      schema:
+        type: string
+    - name: from
+      in: path
+      description: from
+      required: true
+      schema:
+        type: string
+    - name: to
+      in: path
+      description: to
+      required: true
+      schema:
+        type: string
+    get:
+      summary: search stock_ticker
+      responses:
+        '200':
+          description: successful
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3001
