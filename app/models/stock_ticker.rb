@@ -1,0 +1,2 @@
+class StockTicker < ApplicationRecord
+end
