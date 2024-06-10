@@ -39,8 +39,9 @@ gem "bootsnap", require: false
 gem "dotenv-rails"
 gem "oj"
 gem "faraday"
-gem 'rspec-rails'
-gem 'rswag'
+gem "rspec-rails"
+gem "rswag"
+gem "rack-cors"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
